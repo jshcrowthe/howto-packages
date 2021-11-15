@@ -1,0 +1,48 @@
+{
+  "name": "@howto/browser-modules",
+  "version": "0.1.2",
+  "description": "A sample repo demonstrating package.json config for a browser module published to NPM",
+  "author": {
+    "name": "Josh Crowther",
+    "email": "jshcrowthe@gmail.com",
+    "url": "https://josh.crowther.dev"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "howto",
+    "modules",
+    "browser",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@babel/preset-typescript": "7.16.0",
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-node-resolve": "13.0.6",
+    "@types/babel__core": "7.1.16",
+    "@types/babel__preset-env": "7.9.2",
+    "@types/jest": "27.0.2",
+    "babel-jest": "27.3.1",
+    "jest": "27.3.1",
+    "rollup": "2.60.0",
+    "rollup-plugin-typescript2": "0.30.0",
+    "source-map-explorer": "2.5.2",
+    "typescript": "4.4.4"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "prepack": "yarn build"
+  },
+  "repository": "jshcrowthe/howto-browser-modules",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
+}
