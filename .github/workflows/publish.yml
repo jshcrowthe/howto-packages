@@ -22,4 +22,4 @@ jobs:
           yarn config set npmAlwaysAuth true
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: yarn workspaces foreach --no-private npm publish
+      - run: yarn workspaces foreach --no-private npm publish --tolerate-republish

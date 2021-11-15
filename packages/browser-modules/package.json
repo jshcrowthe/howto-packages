@@ -42,7 +42,6 @@
   },
   "repository": "jshcrowthe/howto-browser-modules",
   "license": "MIT",
-  "packageManager": "yarn@3.1.0",
   "dependencies": {
     "tslib": "^2.3.1"
   }
