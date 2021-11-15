@@ -3748,13 +3748,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"__package-root__@https://github.com/jshcrowthe/howto-packages":
-  version: 1.0.0
-  resolution: "__package-root__@https://github.com/jshcrowthe/howto-packages.git#commit=0cc2a59019bb472d02a79cfffaa3569bfcccc2fe"
-  checksum: a838b50f124e421e3652eac3b89262dd80f9510cfbf3259d54ff5a17d964cd0575fc881eb69556eff77be1f8f9430d8d1b9ff6041e7bb478c65fecd7eaa846af
-  languageName: node
-  linkType: hard
-
 "abab@npm:^2.0.3, abab@npm:^2.0.5":
   version: 2.0.5
   resolution: "abab@npm:2.0.5"
@@ -9158,7 +9151,6 @@ __metadata:
   dependencies:
     "@howto/browser-modules": "workspace:*"
     "@howto/react-component": "workspace:*"
-    __package-root__: "https://github.com/jshcrowthe/howto-packages"
     chalk: ^4.1.2
     yeoman-generator: 5.4.2
     yosay: ^2.0.2
