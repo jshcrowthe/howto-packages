@@ -40,7 +40,7 @@
     "test": "jest",
     "prepack": "yarn build"
   },
-  "repository": "jshcrowthe/howto-packages",
+  "repository": "https://github.com/jshcrowthe/howto-packages",
   "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.1"
