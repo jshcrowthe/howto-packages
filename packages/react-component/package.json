@@ -1,6 +1,6 @@
 {
   "name": "@howto/react-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/component.cjs.js",
   "module": "dist/component.esm.js",
   "types": "dist/component.d.ts",
@@ -10,13 +10,10 @@
     "start": "react-scripts start",
     "build": "rollup -c",
     "build-react": "react-scripts build",
-    "prepack": "yarn build",
+    "prepack": "npm run build",
     "test": "cypress run-ct",
     "test-watch": "cypress open-ct"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "tslib": "2.3.1"
   },

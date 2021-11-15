@@ -1,15 +1,12 @@
 {
   "name": "@howto/browser-modules",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A sample repo demonstrating package.json config for a browser module published to NPM",
   "author": {
     "name": "Josh Crowther",
     "email": "jshcrowthe@gmail.com",
     "url": "https://josh.crowther.dev"
   },
-  "files": [
-    "dist"
-  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -38,7 +35,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
-    "prepack": "yarn build"
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",

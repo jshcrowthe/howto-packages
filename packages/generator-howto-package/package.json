@@ -1,0 +1,19 @@
+{
+  "name": "generator-howto-package",
+  "version": "0.0.1",
+  "description": "Generates packages based on the @howto scope",
+  "files": [
+    "generators"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "@howto/browser-modules": "workspace:*",
+    "@howto/react-component": "workspace:*",
+    "chalk": "^4.1.2",
+    "yeoman-generator": "5.4.2",
+    "yosay": "^2.0.2"
+  }
+}
