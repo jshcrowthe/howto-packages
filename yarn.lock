@@ -1312,9 +1312,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@howto/monorepo@workspace:.":
+"@howto/packages@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@howto/monorepo@workspace:."
+  resolution: "@howto/packages@workspace:."
   dependencies:
     "@types/prettier": ^2
     husky: 7.0.4
