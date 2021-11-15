@@ -3,10 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "description": "Monorepo to facilitate @howto package scope development",
-  "main": "index.js",
   "author": "Josh Crowther <jshcrowthe@gmail.com>",
   "license": "MIT",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "packageManager": "yarn@3.1.0",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
 }
