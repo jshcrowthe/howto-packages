@@ -1,0 +1,12 @@
+{
+  "name": "@howto/monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo to facilitate @howto package scope development",
+  "main": "index.js",
+  "author": "Josh Crowther <jshcrowthe@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}
