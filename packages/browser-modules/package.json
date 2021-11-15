@@ -1,6 +1,6 @@
 {
   "name": "@howto/browser-modules",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A sample repo demonstrating package.json config for a browser module published to NPM",
   "author": {
     "name": "Josh Crowther",
@@ -40,7 +40,7 @@
     "test": "jest",
     "prepack": "yarn build"
   },
-  "repository": "jshcrowthe/howto-browser-modules",
+  "repository": "jshcrowthe/howto-packages",
   "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.1"
