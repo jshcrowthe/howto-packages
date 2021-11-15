@@ -1,6 +1,6 @@
 const Generator = require("yeoman-generator");
 const path = require("path");
-const pkg = require("./package.json");
+const pkg = require("../package.json");
 const howtoPkgs = Object.keys(pkg.dependencies).filter((dep) =>
   dep.startsWith("@howto")
 );

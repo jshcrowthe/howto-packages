@@ -1,8 +1,7 @@
 {
   "name": "generator-howto-package",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generates packages based on the @howto scope",
-  "main": "index.js",
   "keywords": [
     "yeoman-generator"
   ],
