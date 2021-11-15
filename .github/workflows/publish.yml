@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://registry.npmjs.org"
+      - uses: c-hive/gha-yarn-cache@v2
       - run: yarn install --immutable
       - name: Setup NPM authentication
         run: |
