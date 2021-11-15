@@ -1,9 +1,9 @@
 {
   "name": "@howto/react-component",
-  "version": "0.0.3",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.4",
+  "main": "dist/component.cjs.js",
+  "module": "dist/component.esm.js",
+  "types": "dist/component.d.ts",
   "scripts": {
     "analyze": "source-map-explorer 'dist/*.js'",
     "analyze-react": "source-map-explorer 'build/static/js/*.js'",
@@ -45,6 +45,7 @@
     "type": "git",
     "url": "https://github.com/jshcrowthe/howto-packages"
   },
+  "license": "MIT",
   "browserslist": {
     "production": [
       ">0.2%",
