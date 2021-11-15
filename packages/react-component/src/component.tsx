@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 
-export const ReactComponent: React.FC<{}> = ({ children, ...props }) => {
-  const [count, setCount] = useState(0);
+interface ReactComponentProps {
+  initialCount?: number;
+}
+
+export const ReactComponent: React.FC<ReactComponentProps> = ({
+  children,
+  ...props
+}) => {
+  const [count, setCount] = useState(props.initialCount || 0);
 
   return (
     <div>
