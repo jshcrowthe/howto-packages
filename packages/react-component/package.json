@@ -10,7 +10,7 @@
     "start": "react-scripts start",
     "build": "rollup -c",
     "build-react": "react-scripts build",
-    "prepack": "yarn build",
+    "prepack": "npm run build",
     "test": "cypress run-ct",
     "test-watch": "cypress open-ct"
   },

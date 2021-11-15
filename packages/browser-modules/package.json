@@ -35,7 +35,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
-    "prepack": "yarn build"
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
