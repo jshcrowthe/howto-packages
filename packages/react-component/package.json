@@ -14,9 +14,6 @@
     "test": "cypress run-ct",
     "test-watch": "cypress open-ct"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "tslib": "2.3.1"
   },

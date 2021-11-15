@@ -1,4 +1,5 @@
 const Generator = require("yeoman-generator");
+const path = require("path");
 const pkg = require("./package.json");
 const howtoPkgs = Object.keys(pkg.dependencies).filter((dep) =>
   dep.startsWith("@howto")
@@ -25,7 +26,9 @@ module.exports = class extends Generator {
     this.props = {};
     this.props.package = typeRes.package;
 
-    this.sourceRoot(require.resolve(`__package-root__/package.json`));
+    this.sourceRoot(
+      path.dirname(require.resolve(`${this.props.package}/package.json`))
+    );
 
     while (!this.props.name || this.props.name.length === 0) {
       const nameRes = await this.prompt({
@@ -40,26 +43,47 @@ module.exports = class extends Generator {
         this.log(`Please enter a valid package name.`);
       }
     }
+
+    const authorRes = await this.prompt({
+      type: "input",
+      name: "author",
+      message: `What is the author's name? (e.g. - John Doe <john@doe.com>)`,
+    });
+
+    this.props.author = typeRes.authorRes;
+
+    const desctiptionRes = await this.prompt({
+      type: "input",
+      name: "desctiption",
+      message: `What's a short description of the new package?`,
+    });
+
+    this.props.destination = typeRes.destinationRes;
   }
 
-  writing() {
-    console.log(this.props, this.sourceRoot());
-    // let templatePath;
-    // switch (this.props.package) {
-    //   case TYPE_ENUM.REACT_COMPONENT:
-    //     templatePath = this.templatePath('component');
-    //     break;
-    //   case TYPE_ENUM.CLIENT_LIB:
-    //     templatePath = this.templatePath('lib');
-    //     break;
-    //   default:
-    //     throw new Error(`Unknown type: ${this.props.package}`);
-    // }
+  async writing() {
+    await this.fs.copyAsync(
+      this.sourceRoot(),
+      this.destinationPath(this.props.name),
+      {
+        process: (content) => {
+          return content
+            .toString()
+            .replace(this.props.package, this.props.name);
+        },
+      }
+    );
 
-    // this.renderTemplate(
-    //   templatePath,
-    //   this.destinationPath(`packages/${this.props.name}`),
-    //   this.props
-    // );
+    const newPkg = require(`${this.props.package}/package.json`);
+    newPkg.name = this.props.name;
+    newPkg.author = this.props.author;
+    newPkg.description = this.props.description;
+    newPkg.version = "0.0.1";
+    newPkg.repository = undefined;
+
+    this.fs.writeJSON(
+      this.destinationPath(`${this.props.name}/package.json`),
+      newPkg
+    );
   }
 };
