@@ -5477,7 +5477,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:4.1.2, chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
+"chalk@npm:4.1.2, chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -9151,9 +9151,9 @@ __metadata:
   dependencies:
     "@howto/browser-modules": "workspace:*"
     "@howto/react-component": "workspace:*"
-    chalk: ^4.1.2
+    chalk: 4.1.2
     yeoman-generator: 5.4.2
-    yosay: ^2.0.2
+    yosay: 2.0.2
   languageName: unknown
   linkType: soft
 
@@ -21027,7 +21027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yosay@npm:^2.0.2":
+"yosay@npm:2.0.2, yosay@npm:^2.0.2":
   version: 2.0.2
   resolution: "yosay@npm:2.0.2"
   dependencies:
