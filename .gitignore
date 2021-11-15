@@ -119,3 +119,6 @@ dist
 
 # cypress
 **/cypress/videos
+
+# Create React App
+build/

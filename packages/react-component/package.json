@@ -5,10 +5,11 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "analyze": "source-map-explorer 'dist/*.js'",
+    "analyze-react": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "rollup -c",
-    "build-react": "react-scripts start",
+    "build-react": "react-scripts build",
     "prepack": "yarn build",
     "test": "cypress run-ct",
     "test-watch": "cypress open-ct"
