@@ -17,7 +17,7 @@
     ":build": "yarn workspaces foreach -pt run build",
     ":generator": "yo ./packages/generator-howto-package"
   },
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "yarn@3.2.3",
   "dependencies": {
     "@types/prettier": "2.4.2",
     "husky": "7.0.4",
