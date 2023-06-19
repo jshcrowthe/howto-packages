@@ -2015,7 +2015,7 @@ __metadata:
     "@types/jest": 27.0.3
     babel-jest: 27.3.1
     jest: 27.3.1
-    rollup: 2.60.0
+    rollup: 2.79.1
     rollup-plugin-typescript2: 0.31.0
     source-map-explorer: 2.5.2
     tslib: 2.3.1
@@ -2052,7 +2052,7 @@ __metadata:
     react-dom: 17.0.2
     react-redux: 7.2.6
     react-scripts: 4.0.3
-    rollup: 2.60.0
+    rollup: 2.79.1
     rollup-plugin-typescript2: 0.31.0
     source-map-explorer: 2.5.2
     tslib: 2.3.1
@@ -17623,9 +17623,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:2.60.0":
-  version: 2.60.0
-  resolution: "rollup@npm:2.60.0"
+"rollup@npm:2.79.1":
+  version: 2.79.1
+  resolution: "rollup@npm:2.79.1"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -17633,7 +17633,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: ef267b49a203f3db86d6db8c63de8737d6e3995d988dadf35c1922964c21cafbb95990543cfc716356d31bf6ca3975e58d9195df85b28721ecdc9acd3693acca
+  checksum: 6a2bf167b3587d4df709b37d149ad0300692cc5deb510f89ac7bdc77c8738c9546ae3de9322b0968e1ed2b0e984571f5f55aae28fa7de4cfcb1bc5402a4e2be6
   languageName: node
   linkType: hard
 
