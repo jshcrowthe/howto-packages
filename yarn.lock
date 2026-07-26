@@ -2017,7 +2017,7 @@ __metadata:
     jest: 27.3.1
     rollup: 2.60.0
     rollup-plugin-typescript2: 0.31.0
-    source-map-explorer: 2.5.2
+    source-map-explorer: 2.5.3
     tslib: 2.3.1
     typescript: 4.4.4
   languageName: unknown
@@ -2054,7 +2054,7 @@ __metadata:
     react-scripts: 4.0.3
     rollup: 2.60.0
     rollup-plugin-typescript2: 0.31.0
-    source-map-explorer: 2.5.2
+    source-map-explorer: 2.5.3
     tslib: 2.3.1
     typescript: 4.4.4
   peerDependencies:
@@ -18351,9 +18351,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-explorer@npm:2.5.2":
-  version: 2.5.2
-  resolution: "source-map-explorer@npm:2.5.2"
+"source-map-explorer@npm:2.5.3":
+  version: 2.5.3
+  resolution: "source-map-explorer@npm:2.5.3"
   dependencies:
     btoa: ^1.2.1
     chalk: ^4.1.0
@@ -18364,13 +18364,13 @@ __metadata:
     gzip-size: ^6.0.0
     lodash: ^4.17.20
     open: ^7.3.1
-    source-map: ^0.7.3
+    source-map: ^0.7.4
     temp: ^0.9.4
     yargs: ^16.2.0
   bin:
     sme: bin/cli.js
     source-map-explorer: bin/cli.js
-  checksum: ff6748a5e132e03cd7646892e7b3869d10ebae1f2adea6f359145e188f2af5450e3ed9d8f132ed6b2e7fe9359e5e5d2b5becb0264fb8ef7105437ff452981295
+  checksum: 1d4e619d7eb224f38a3dadfb20eb34a56cfc29bd237b4815b60257e7fe5ee9f791fda3e0bba91318e0f2beffec5cca573abb8b5030a95f305ce4abee93296065
   languageName: node
   linkType: hard
 
@@ -18429,6 +18429,13 @@ __metadata:
   version: 0.7.3
   resolution: "source-map@npm:0.7.3"
   checksum: cd24efb3b8fa69b64bf28e3c1b1a500de77e84260c5b7f2b873f88284df17974157cc88d386ee9b6d081f08fdd8242f3fc05c953685a6ad81aad94c7393dedea
+  languageName: node
+  linkType: hard
+
+"source-map@npm:^0.7.4":
+  version: 0.7.6
+  resolution: "source-map@npm:0.7.6"
+  checksum: 932f4a2390aa7100e91357d88cc272de984ad29139ac09eedfde8cc78d46da35f389065d0c5343c5d71d054a6ebd4939a8c0f2c98d5df64fe97bb8a730596c2d
   languageName: node
   linkType: hard
 
